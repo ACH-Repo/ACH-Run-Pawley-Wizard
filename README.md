@@ -186,7 +186,7 @@ If you want to invoke the wizard from any working directory without typing the f
 @python "[FULL_PATH]\run_pawley_wizard.py" %*
 ```
 
-Replace `[FULL_PATH]` with the absolute path to the folder where `run_pawley_wizard.py` lives (e.g. `C:\Users\chris\Documents\Claude\run_pawley`). Place `rp.cmd` in any folder that is on your `PATH` environment variable (e.g. `C:\Users\<you>\bin\`). After that, opening a terminal in your data directory and typing `rp` is all it takes.
+Replace `[FULL_PATH]` with the absolute path to the folder where `run_pawley_wizard.py` lives (e.g. `C:\Users\<you>\Documents\Claude\run_pawley`). Place `rp.cmd` in any folder that is on your `PATH` environment variable (e.g. `C:\Users\<you>\bin\`). After that, opening a terminal in your data directory and typing `rp` is all it takes.
 
 ---
 

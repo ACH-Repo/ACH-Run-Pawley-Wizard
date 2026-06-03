@@ -4,7 +4,7 @@ TOPAS Pawley Input File Wizard
 An interactive guide to generating structureless profile fitting (.inp)
 files for TOPAS using raw powder diffraction data and CIF files.
 
-Author: Christian Nelle
+Author: <author>
 """
 
 import os
@@ -29,8 +29,8 @@ warnings.filterwarnings('ignore', category=UserWarning)
 # ==========================================
 
 SETTINGS = {
-	'script_author': 'Christian Nelle',
-	'cif_dir_path': r'D:\Workfolder\Nelle\CIF_LOC',
+	'script_author': '<author>',
+	'cif_dir_path': r'D:\Workfolder\<you>\CIF_LOC',
 	'iters': '10000',
 	'separator_ident': '_pawley_01_',
 	'chi2_convergence_criteria': '0.000001',
@@ -64,7 +64,7 @@ SETTINGS = {
 # Python Template objects make text insertion safe and clear
 INP_TEMPLATE = Template(''''--------------------------------------------------------------
 'Input File for structureless profile fitting (Pawley).
-'Created using python for Henke Group @ TU-Dortmund.
+'Created using python for <group> @ TU-Dortmund.
 'Script name: $script_name
 'Rundate: $run_date
 'Script author $author
