@@ -224,10 +224,12 @@ All TOPAS output files share the root name with the separator string `_pawley_01
 <root>_pawley_01_X_Yobs.txt
 <root>_pawley_01_Out_X_Ycalc.txt
 <root>_pawley_01_X_Difference.txt
-<root>_pawley_01_2Th_Ip_<sg_num>.txt   (one per phase)
+<root>_pawley_01_2Th_Ip_p<idx>_<sg_num>.txt   (one per phase)
 ```
 
-The separator string is how the companion [ACH-Pawley-Plotter](https://github.com/ACH-Repo/ACH-Pawley-Plotter) script discovers and groups output files.
+The Bragg-position file carries `p<idx>` — the phase's 1-based ordinal in the fit — *before* its space-group number. The ordinal is the phase's identity, so the filename stays unique even when two phases share a space group (the `<sg_num>` alone would collide and TOPAS would silently overwrite the first file). The space group is kept in the name purely for human readability. The companion [ACH-Pawley-Plotter](https://github.com/ACH-Repo/ACH-Pawley-Plotter) joins each Bragg file to its phase (and substance label) by this ordinal.
+
+The separator string is how the plotter discovers and groups output files.
 
 ### Trusted starting parameters
 

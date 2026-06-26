@@ -189,7 +189,7 @@ def build_phase_section(phases: list, sep: str, out_name: str,
 		"\t\t$macro_call\n"
 		"\t\tspace_group \"$sg_num\"\n\n"
 		"\t\tcell_volume $vol\n\n\n"
-		"\tCreate_2Th_Ip_file(\"${out_name}${sep}2Th_Ip_${sg_num}.txt\")\n\n"
+		"\tCreate_2Th_Ip_file(\"${out_name}${sep}2Th_Ip_p${idx}_${sg_num}.txt\")\n\n"
 	)
 
 	for i, phase in enumerate(phases, start=1):
